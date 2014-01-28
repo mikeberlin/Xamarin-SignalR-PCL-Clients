@@ -58,12 +58,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\Core\Core.csproj">
-      <Project>{CE2DF44E-3081-45AC-B561-92BFAD01CFA5}</Project>
-      <Name>Core</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="Resources\Drawable\" />
     <Folder Include="Resources\Layout\" />
     <Folder Include="Resources\Values\" />
@@ -72,5 +66,11 @@
     <AndroidResource Include="Resources\Drawable\Icon.png" />
     <AndroidResource Include="Resources\Layout\Main.axml" />
     <AndroidResource Include="Resources\Values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{CE2DF44E-3081-45AC-B561-92BFAD01CFA5}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
